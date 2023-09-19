@@ -95,7 +95,8 @@ deploying "YourContract"
 
 6. Check the deployment report at the Catapulta UI, and enjoy delegated Etherscan verification without any extra configs or Etherscan API keys.
 
-![e6uSRe8e](https://github.com/catapulta-sh/catapulta-scaffold-eth-2/assets/11179847/9ac0766b-33e9-49f6-b34d-c83f21c6c199)
+![e6uSRe8e](https://github.com/catapulta-sh/catapulta-scaffold-eth-2/assets/11179847/9a2d14d6-34ee-4cc9-9d69-5c4433249ac3)
+
 
 
 ## Quickstart

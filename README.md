@@ -23,6 +23,80 @@ Before you begin, you need to install the following tools:
 - Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
 - [Git](https://git-scm.com/downloads)
 
+## Deploy to Sepolia testnet with Catapulta.sh
+
+1. Clone this repo & install dependencies
+
+```
+git clone https://github.com/scaffold-eth/scaffold-eth-2.git
+cd scaffold-eth-2
+yarn install
+```
+
+2. Generate a new private key with Catapulta, is stored offline in your .env, or add your own as `PRIVATE_KEY` in the .env file stored at the root of the project
+
+```
+cd packages/hardhat
+
+npx catapulta wallet
+
+# Output:
+# Wallet address: 0x6B193d5604e09f1737E33cFc4B06fb3f2C7fC3CE
+# Private key appended to your .env file.
+```
+
+3. Get funds for your Ethereum address at the [Alchemy Sepolia faucet](https://sepoliafaucet.com/)
+
+4. Setup your `CATAPULTA_API_KEY` into your .env from, generate one for free at [Catapulta dashboard](https://catapulta.sh)
+
+5. Deploy the contract into Sepolia testnet with Catapulta
+
+```
+catapulta deploy --network sepolia
+```
+
+```
+#Output:
+
+Catapulta.sh 🏏 Hardhat deployment (0.1.36)
+===========================================
+Project name: Ghost Deployments
+Project URL: https://catapulta.sh/project/64e6272a59b37a3a4a7afb55
+Deployment UUID: 6c7f65cb-52e0-459e-9b58-a5b3d5f296f2
+
+📀 Building artifacts...
+
+🗜  Compressing artifacts...
+
+📤 Uploading artifacts to the Catapulta DB...
+
+✅ Artifacts uploaded successfully.
+
+📡 Broadcasting deployments to Catapulta Gateway RPC:
+
+📜 Running Hardhat script: yarn run hardhat --network catapulta-6c7f65cb-52e0-459e-9b58-a5b3d5f296f2 deploy
+
+deploying "YourContract"
+ (tx: 0x9f4532ec9c34fed74d8295d0991d9935be194e582616a0660b6c51154204bf88)...
+: deployed at 0xF31540a002a49bda9963caAcCeF3e25d0a09810e with 534015 gas
+
+📝 Updated TypeScript contract definition file on ../nextjs/generated/deployedContracts.ts
+
+✅ Deployment successfully broadcasted
+
+- Etherscan verification request sent. Check the dashboard for keeping track verifications. If contracts are not verified in 10 minutes, contact support at Discord.
+
+💾 Artifacts stored at:
+- https://users-artifacts.s3.eu-west-1.amazonaws.com/6c7f65cb-52e0-459e-9b58-a5b3d5f296f2-deployment-artifacts/artifacts.zip
+
+📸 Check your deployment report at:
+ - https://catapulta.sh/project/64e6272a59b37a3a4a7afb55/op/6c7f65cb-52e0-459e-9b58-a5b3d5f296f2
+```
+
+6. Check the deployment report at the Catapulta UI, and enjoy delegated Etherscan verification without any extra configs or Etherscan API keys.
+
+![basic 2](https://github.com/catapulta-sh/catapulta-forge-template/assets/11179847/9b2c830b-ab4e-4da6-b3c0-e515639cc47b)
+
 ## Quickstart
 
 To get started with Scaffold-ETH 2, follow the steps below:

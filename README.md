@@ -1,19 +1,8 @@
-# 🏗 Scaffold-ETH 2
+# Catapulta Hardhat Template
 
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
+Template repository for getting started quickly with [Catapulta.sh](https://catapulta.sh) and Hardhat projects.
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
-
-⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, and Typescript.
-
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
-
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/1171422a-0ce4-4203-bcd4-d2d1941d198b)
+This template uses [Scaffold-ETH 2](https://github.com/scaffold-eth/scaffold-eth-2);
 
 ## Requirements
 
@@ -23,13 +12,13 @@ Before you begin, you need to install the following tools:
 - Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
 - [Git](https://git-scm.com/downloads)
 
-## Deploy to Sepolia testnet with Catapulta.sh
+## Deploy to Sepolia testnet with Catapulta and Hardhat
 
 1. Clone this repo & install dependencies
 
 ```
-git clone https://github.com/scaffold-eth/scaffold-eth-2.git
-cd scaffold-eth-2
+git clone https://github.com/catapulta-sh/catapulta-hardhat-template
+cd catapulta-hardhat-template
 yarn install
 ```
 
@@ -74,7 +63,7 @@ Deployment UUID: 6c7f65cb-52e0-459e-9b58-a5b3d5f296f2
 
 📡 Broadcasting deployments to Catapulta Gateway RPC:
 
-📜 Running Hardhat script: yarn run hardhat --network catapulta-6c7f65cb-52e0-459e-9b58-a5b3d5f296f2 deploy
+📜 Running Hardhat script: yarn run hardhat --network catapulta-6c7f65c2-52e0-459e-9b58-a5b3d5f296f2 deploy
 
 deploying "YourContract"
  (tx: 0x9f4532ec9c34fed74d8295d0991d9935be194e582616a0660b6c51154204bf88)...
@@ -87,10 +76,10 @@ deploying "YourContract"
 - Etherscan verification request sent. Check the dashboard for keeping track verifications. If contracts are not verified in 10 minutes, contact support at Discord.
 
 💾 Artifacts stored at:
-- https://users-artifacts.s3.eu-west-1.amazonaws.com/6c7f65cb-52e0-459e-9b58-a5b3d5f296f2-deployment-artifacts/artifacts.zip
+- https://users-artifacts.s3.eu-west-1.amazonaws.com/6c7f65cb-52e0-459e-9b52-a5b3d5f296f2-deployment-artifacts/artifacts.zip
 
 📸 Check your deployment report at:
- - https://catapulta.sh/project/64e6272a59b37a3a4a7afb55/op/6c7f65cb-52e0-459e-9b58-a5b3d5f296f2
+ - https://catapulta.sh/project/64e6272a59b37a3a4a7afb55/op/6c7f25cb-52e0-459e-9b58-a5b3d5f296f2
 ```
 
 6. Check the deployment report at the Catapulta UI, and enjoy delegated Etherscan verification without any extra configs or Etherscan API keys.

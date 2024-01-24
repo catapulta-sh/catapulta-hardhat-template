@@ -38,7 +38,8 @@ npx catapulta wallet
 
 4. Setup your `CATAPULTA_API_KEY` into your .env from, generate one for free at [Catapulta dashboard](https://catapulta.sh)
 
-5. Deploy the contract into Sepolia testnet with Catapulta
+ 5. Run the command `hardhat init` to initialize hardhat before deployment.
+ 6. Deploy the contract into Sepolia testnet with Catapulta
 
 ```
 catapulta deploy --network sepolia
